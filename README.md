@@ -9,7 +9,7 @@
 
 
 
-* Then just run this in the folder with all your .nml files.
+* Then just run the nml_parser.py in the folder with all your .nml files.
 
 * All nml files that do not already have txt playlist generated will be processed.
 
