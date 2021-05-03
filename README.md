@@ -15,4 +15,6 @@
 
 * Ignores other folders and any files other than txt and nml.
 
+* Strips trailing bpm in the track name.
+
 *Maybe also check out: https://www.mixcloud.com/Atun_darkpsy/*
