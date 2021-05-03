@@ -105,7 +105,14 @@ def create_txt(file):
     result_file = open(file + ".txt", 'w', encoding='utf-8')
 
     for item in tuple(result_items):
-        result_file.write(item[0] + " - " + item[1] + "\n")
+        artist_name_final = item[0]
+        original_track_name = item[1]
+
+        track_no_bpm_result = re.match('^(.*?)(( (- )?)\(?(\d\d\d)?[bBpPmM]*?\)?)*$', original_track_name)
+        track_name_final = track_no_bpm_result.group(1)
+        #print(original_track_name)
+        #print(track_name_final)
+        result_file.write(artist_name_final + " - " + track_name_final + "\n")
     
     result_file.close()
         
