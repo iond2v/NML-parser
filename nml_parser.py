@@ -108,7 +108,7 @@ def create_txt(file):
         artist_name_final = item[0]
         original_track_name = item[1]
 
-        track_no_bpm_result = re.match('^(.*?)(( (- )?)\(?(\d\d\d)?[bBpPmM]*?\)?)*$', original_track_name)
+        track_no_bpm_result = re.match('^(.*?)(( (- )?)[\(\[]?(\d\d\d)?[bBpPmM]*?[\)\]]?)*$', original_track_name)
         track_name_final = track_no_bpm_result.group(1)
         #print(original_track_name)
         #print(track_name_final)
