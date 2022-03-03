@@ -56,14 +56,14 @@ def create_txt(file):
         #at least one is not None - matching happened - we are on a line of interest..
         if(title_result is not None or artist_result is not None or file_result is not None):
             if(title_result is None):
-                title_result = "EMPTY TITLE"
+                title = "EMPTY TITLE"
                 print("EMPTY TITLE")
             else:
                 title = title_result.group(1)          
 
                 
             if(artist_result is None):
-                artist_result = "EMPTY ARTIST"
+                artist = "EMPTY ARTIST"
                 print("EMPTY ARTIST")
             else:
                 artist = artist_result.group(1)
