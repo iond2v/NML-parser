@@ -63,7 +63,7 @@ def create_txt(file):
 
                 
             if(artist_result is None):
-                title_result = "EMPTY ARTIST"
+                artist_result = "EMPTY ARTIST"
                 print("EMPTY ARTIST")
             else:
                 artist = artist_result.group(1)
