@@ -1,10 +1,13 @@
 import os
 import re
-import html
+import html #for converting string codes
+import sys
 
-def main():
+def process_folder(folder_name):
+
+
     
-    entries = os.listdir('./')
+    entries = os.listdir(folder_name)
 
     text_files = []
     nml_files = []
@@ -118,7 +121,10 @@ def create_txt(file):
         
 
 if __name__ == "__main__":
-    main()
 
+    folder_name = "./"
 
-
+    if len(sys.argv) == 2:
+        folder_name = sys.argv[1]
+        
+    process_folder(folder_name)
